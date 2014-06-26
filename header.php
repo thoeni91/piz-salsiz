@@ -17,6 +17,7 @@
 <title><?php wp_title(); ?></title>
     
 <?php wp_head(); ?>
+<!-- last test for today, actually nobody cares... -->
     
 </head>
 <body <?php body_class(); ?>>
