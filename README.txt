@@ -1,1 +1,1 @@
-Insert some clever text here.\n
+WordPress Test Repository.
