@@ -17,7 +17,6 @@
 <title><?php wp_title(); ?></title>
     
 <?php wp_head(); ?>
-<!-- its weird... -->
     
 </head>
 <body <?php body_class(); ?>>
