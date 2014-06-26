@@ -20,7 +20,6 @@
     
 </head>
 <body <?php body_class(); ?>>
-<!-- test -->
     
 <header>
     <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Piz Salsiz" /></a>
