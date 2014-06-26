@@ -17,6 +17,7 @@
 <title><?php wp_title(); ?></title>
     
 <?php wp_head(); ?>
+<!-- i am a github test -->
     
 </head>
 <body <?php body_class(); ?>>
