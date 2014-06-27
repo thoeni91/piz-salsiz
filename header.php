@@ -15,7 +15,6 @@
 <!--<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/functions.js"></script>-->
 
 <title><?php wp_title(); ?></title>
-<!-- a minor change -->
     
 <?php wp_head(); ?>
     
