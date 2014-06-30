@@ -26,7 +26,7 @@ add_editor_style();
 
 // Add Thumbnail Sizes
 add_image_size( 'page-thumbnail', 800, 350, true );
-add_image_size( 'team-thumbnail', 400, 250, true );
+add_image_size( 'team-thumbnail', 400, 350, true );
 
 // Über uns
 add_action( 'init', 'create_team' );
@@ -56,7 +56,7 @@ function create_team() {
 		'show_in_menu'       => true,
         'menu_icon'          => 'dashicons-groups',
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'book' ),
+		'rewrite'            => array( 'slug' => 'team' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
@@ -66,5 +66,17 @@ function create_team() {
 
 	register_post_type( 'team', $args );
 }
+
+function team_admin_order( $wp_query ) {
+  if ( is_admin() && !isset( $_GET['orderby'] ) ) {     
+    // Get the post type from the query
+    $post_type = $wp_query->query['post_type'];
+    if ( in_array( $post_type, array('team') ) ) {
+      $wp_query->set('orderby', 'menu_order');
+      $wp_query->set('order', 'ASC');
+    }
+  }
+}
+add_filter('pre_get_posts', 'team_admin_order');
 
 ?>
