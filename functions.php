@@ -13,6 +13,14 @@ add_theme_support( 'menus' );
 // Enable Thumbnails
 add_theme_support( 'post-thumbnails' );
 
+// Enable Custom Headers
+$headerOptions = array(
+	'width'                  => 1920,
+	'height'                 => 1080,
+	'header-text'            => false,
+);
+add_theme_support( 'custom-header', $headerOptions );
+
 // Enable Custom Editor Styles
 add_editor_style();
 

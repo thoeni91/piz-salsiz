@@ -12,8 +12,16 @@ $team = new WP_Query(array(
 get_header();
 
 ?>
-
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <section id="page-<?php the_id(); ?>">
+	<div id="content" class="team">
+		<h2><?php the_title(); ?></h2>
+		<?php the_content(); ?>
+	</div>
+	<?php endwhile; else: ?>
+	<?php endif; ?>
+	
+
     <?php while ( $team->have_posts() ) : $team->the_post(); ?>
     <div class="teammember">
         <div class="image">

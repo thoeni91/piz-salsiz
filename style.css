@@ -4,3 +4,173 @@ Description: Theme für die Piz Salsiz Website
 Author: Marc Thöni
 Author URI: http://gschpunna.ch
 */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* apply a natural box layout model to all elements */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#fancybox-wrap,
+#fancybox-wrap div {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+body {
+  font: 16px 'Open Sans', Verdana, Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center center bottom;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header {
+  position: relative;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+  background: url(images/retina_wood.png) repeat;
+}
+header nav {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+header nav ul {
+  padding: 10px 0;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+header nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+header nav ul li.current-menu-item a {
+  text-decoration: underline;
+}
+.clear {
+  clear: both;
+}
+#main-container {
+  width: 800px;
+  margin: 0 auto;
+}
+#main-container section img {
+  display: block;
+}
+#main-container section #content {
+  padding: 30px 50px 10px 50px;
+  background: #fff;
+}
+#main-container section #content h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-family: 'Tangerine', Verdana, Arial, sans-serif;
+}
+#main-container section #content h3 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  font-family: 'Tangerine', Verdana, Arial, sans-serif;
+}
+#main-container section #content h4 {
+  font-size: 28px;
+  font-family: 'Tangerine', Verdana, Arial, sans-serif;
+}
+#main-container section #content p {
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+#main-container section #content .alignleft {
+  float: left;
+  margin-right: 20px;
+}
+#main-container section #content .alignright {
+  float: right;
+  margin-left: 20px;
+}
+#main-container section #content ul,
+#main-container section #content ol {
+  margin: 0 0 20px 20px;
+}
+#main-container section #content ul li,
+#main-container section #content ol li {
+  margin-bottom: 5px;
+}
+#main-container section #content ul {
+  margin-left: 18px;
+}
+#main-container section #content.team {
+  margin-bottom: 30px;
+}
+#main-container section .teammember {
+  margin-bottom: 30px;
+}
+#main-container section .teammember .image {
+  float: left;
+}
+#main-container section .teammember .contentRight {
+  max-width: 400px;
+  width: 100%;
+  height: 250px;
+  float: left;
+  padding: 30px;
+  background: #fff;
+}
+#main-container section .teammember .contentRight h2 {
+  font-family: 'Tangerine', Verdana, Arial, sans-serif;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+#main-container footer {
+  width: 100%;
+  margin: 30px 0;
+  padding: 30px;
+  text-align: center;
+  background: url(images/retina_wood.png) repeat;
+}
+#main-container footer a {
+  color: #000;
+  text-decoration: none;
+}
+#main-container footer a:hover {
+  text-decoration: underline;
+}
+.wpcf7 form input,
+.wpcf7 form textarea {
+  width: 230px;
+  margin-bottom: 10px;
+  padding: 7px;
+  outline: none;
+  border: 1px solid #dedede;
+  font-family: 'Open Sans', Verdana, Arial, sans-serif;
+  font-size: 16px;
+  background: #fafafa;
+}
+.wpcf7 form textarea {
+  width: 400px;
+}
+.wpcf7 form input[type=submit] {
+  width: auto;
+  padding: 10px 15px;
+  font-family: 'Tangerine', Verdana, Arial, sans-serif;
+  font-size: 30px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+.wpcf7 form input[type=number] {
+  width: 80px;
+}
