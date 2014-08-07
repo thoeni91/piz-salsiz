@@ -179,3 +179,7 @@ header nav ul li.current-menu-item a {
 .wpcf7 form input[type=number] {
   width: 80px;
 }
+.wpcf7 form input[type=checkbox] {
+  width: auto;
+  margin-right: 10px;
+}
